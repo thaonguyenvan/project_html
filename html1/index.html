@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Support Dạo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Local bootstrap CSS & JS -->
 	<link rel="stylesheet" media="screen" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/web.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/web.css">
+	<link rel="shortcut icon" href="./images/logo-shortcut.jpg" />
 	<script src="jquery/jquery-3.3.1.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="visible-md visible-lg">
+	<div class="visible-md visible-lg" style="margin-top: 117px;">
 		<nav id="main-menu" class="visible-md visible-lg">
 			<div class="container">
 				<div class="nav-top row clearfix">
 					<div class="logo col-md-3">
-						<a href=""><img src="./images/logo.png" alt="SupportSages, Server management company logo" width="246px" height="66px"></a>
+						<a href="index.html"><img src="./images/logo.png" alt="SupportSages, Server management company logo" width="246px" height="66px"></a>
 					</div>
 					<div class="col-md-8">
 						<div class="row half-bottom">
@@ -44,10 +45,10 @@
 										<input type="search" placeholder="Search" class="top-search" name="">
 									</form>
 								</li>
-								<li><a title="Contact Us" class="glyphicon glyphicon-earphone" href=""><span>Contact Us</span></a></li>
+								<li><a title="Contact Us" class="glyphicon glyphicon-earphone" href="contact.html"><span>Contact Us</span></a></li>
 								<li><a title="Careers" class="glyphicon glyphicon-user" href=""><span>Careers</span></a></li>
 								<li><a target="_blank" title="Blog" class="glyphicon glyphicon-pencil" href=""><span>Blog</span></a></li>
-								<li><a title="My Account" class="glyphicon glyphicon-home" href=""><span>My Account</span></a></li>
+								<li><a title="My Account" class="glyphicon glyphicon-home" href="login.html"><span>My Account</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -59,7 +60,7 @@
 			<div class="main-nav navbar-collapse collapse visible-md visible-lg">
 				<div class="container">
 					<ul class="nav nav-justified">
-						<li class="main-li"><a class="active home-hover" href="">Home</a></li>
+						<li class="main-li"><a class="active home-hover" href="index.html">Home</a></li>
 						<li role="presentation" class="dropdown main-li">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Support Services</a>
 							<ul class="dropdown-menu support-services" role="menu">
@@ -101,7 +102,75 @@
 			</div>
 		</nav>
 	</div>
-	<div class="banner">
+	<header class="hidden-lg hidden-md">
+		<div class="container half-top half-bottom">
+			<div class="row aligncenter">
+				<div class="col-md-12 add-bottom-half">
+					<a href=""><img src="images/logo_mobile.png" alt="SupportSages Logo" width="236px" height="53px"></a>
+				</div>
+				<!-- Currency Switcher -->
+				<div class="col-md-12 add-bottom-half">
+					<div class="wc-price-based-country wc-price-based-country-refresh-area">		
+						<form method="post" class="wcpbc-widget-country-selecting">		
+							<select class="country" name="wcpbc-manual-country">
+								<option value="EN">English</option>
+								<option value="VN" selected="selected">Vietnamese</option>
+							</select>					
+						</form>			
+					</div>
+				</div>
+				<!--/ Currency Switcher -->
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul id="mobile-nav-tabs" class="nav-tabs remove-bottom">
+						<li><a title="Contact Us" class="glyphicon glyphicon-earphone" href=""><span>Contact Us</span></a></li>
+						<li><a title="Careers" class="glyphicon glyphicon-user" href=""><span>Careers</span></a></li>
+						<li><a target="_blank" title="Blog" class="glyphicon glyphicon-pencil" href=""><span>Blog</span></a></li>
+						<li><a title="My Account" class="glyphicon glyphicon-home" href=""><span>My Account</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-bg">
+			<div class="container">
+				<div class="navbar navbar-default navbar-turquoise main-nav" role="navigation">
+					<div class="navbar-header navbar-header-custom">
+						<a title="Home" class="glyphicon glyphicon-home glyphicon-home-custom pull-left mobile-home hidden-lg" href=""></a>
+						<button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle">
+							<img src="images/toggle-btn.png" alt="NAVIGATION">
+						</button>
+					</div>
+					<div id="navbar-collapse-grid" class="collapse navbar-ex1-collapse">
+						<ul class="mobile-nav hidden-lg">
+							<li><a href="">Home</a></li>
+							<li><a href="#">Support Services<span>+</span></a>
+								<ul class="none">
+								</ul>
+							</li>
+							<li><a href="#">Server Management<span>+</span></a>
+								<ul class="none">
+								</ul>
+							</li>
+							<li><a href="#">Dedicated Support<span>+</span></a>
+								<ul class="none">
+								</ul>
+							</li>
+							<li><a href="#">Enterprise Solutions<span>+</span></a>
+								<ul class="none">
+								</ul>
+							</li>
+							<li><a href="#">About Us<span>+</span></a>
+								<ul class="none">
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="banner visible-lg visible-md">
 		<div class="container-fluid">
 			<div class="row">
 				<div id="carousel-example-generic" class="carousel slide slide-custom" data-ride="carousel" data-interval="10000">
@@ -134,7 +203,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="news-ticker">
+	<div class="news-ticker visible-md visible-lg">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8" style="overflow: hidden;">
@@ -157,30 +226,62 @@
 						<div class="welcome_info">
 							<h3>Helpdesk Support</h3>								
 							<p>The most important division of a webhosting business is it's customer support.</p>
-							<a href="https://www.supportsages.com/helpdesk-support/" class="readmore">Read more..</a>									
+							<a href="" class="readmore">Read more..</a>									
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
 						<div class="welcome_item">
-							<img src="images/home-helpdesk.png" alt="images">
+							<img src="images/24-7support.png" alt="images">
 						</div>
 						<div class="welcome_info">
 							<h3>Helpdesk Support</h3>								
 							<p>The most important division of a webhosting business is it's customer support.</p>
-							<a href="https://www.supportsages.com/helpdesk-support/" class="readmore">Read more..</a>									
+							<a href="" class="readmore">Read more..</a>									
 						</div>
 					</div>
 					<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
 						<div class="welcome_item">
-							<img src="images/home-helpdesk.png" alt="images">
+							<img src="images/home-migration.png" alt="images">
 						</div>
 						<div class="welcome_info">
 							<h3>Helpdesk Support</h3>								
 							<p>The most important division of a webhosting business is it's customer support.</p>
-							<a href="https://www.supportsages.com/helpdesk-support/" class="readmore">Read more..</a>									
+							<a href="" class="readmore">Read more..</a>									
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="pattern-bg hidden-lg hidden-md">
+			<div class="container">
+				<div class="row welcome welcome_details" style="margin-top:42px; margin-bottom:42px;">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="welcome_info">
+							<img alt="images" src="images/home-helpdesk.png">
+							<h2>Helpdesk Support</h2>
+							<p>The most important division of a webhosting business is it's customer support.</p>
+							<a href="" class="readmore">Read more..</a>								
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="welcome_info">
+							<img alt="images" src="images/24-7support.png">
+							<h2>24/7/365 Server Management</h2>
+							<p>Includes server monitoring, troubleshooting, software updates, daily backup addon,</p>
+							<a href="" class="readmore">Read more..</a>								
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<div class="welcome_info">
+							<img alt="images" src="images/home-migration.png">
+							<h2>Migrations</h2>
+							<p>Switching hosts? Like to migrate your websites from one host to another?</p>
+							<a href="" class="readmore">Read more..</a>								
+						</div>
+					</div>
+
+				</div>
+				<!--row-->
 			</div>
 		</div>
 		<section class="why-choose-section">
